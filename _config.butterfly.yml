@@ -22,6 +22,15 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  列表||fas fa-list:
+    音乐: /music/ || fas fa-music
+    电影: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -40,14 +49,14 @@ code_blocks:
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
-  fullpage: false
+  fullpage: true
 
 # Social media links
 # Formal:
 #   icon: link || the description || color
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+   fas fa-envelope: mailto:manoling@qq.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -56,20 +65,20 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/007.jpg
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/004.jpg
 
 # The banner image of index page
-index_img:
+index_img: /img/002.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /img/006.jpg
 
 # Note: tag page, not tags page
 tag_img:
@@ -111,9 +120,9 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
-  background: /img/error-page.png
+  background: /img/008.png
 
 post_meta:
   # Home Page
@@ -135,6 +144,9 @@ post_meta:
     categories: true
     tags: true
     label: true
+
+
+
 
 # --------------------------------------
 # Index page settings
@@ -174,7 +186,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 6
 
 # Display the article introduction on homepage
 # 1: description
@@ -184,7 +196,7 @@ index_layout: 3
 index_post_content:
   method: 3
   # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 350
 
 # --------------------------------------
 # Post Settings
@@ -937,8 +949,10 @@ abcjs:
 # Mermaid
 # https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # Write Mermaid diagrams using code blocks
+  per_page: false
+  #默认不全局加载，豆姐说要用去文章头部写 mermaid: true 启用能省速度
   code_write: false
   # built-in themes: default / forest / dark / neutral
   theme:
